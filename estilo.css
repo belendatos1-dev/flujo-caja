@@ -1,0 +1,87 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f4f6f8;
+  color: #222;
+}
+
+h1 { text-align: center; }
+
+.saldos {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tarjeta {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.tarjeta h2 { margin: 0 0 10px; font-size: 16px; color: #555; }
+.tarjeta p { margin: 0; font-size: 24px; font-weight: bold; }
+.tarjeta.total { background: #2c7a4b; color: white; }
+.tarjeta.total h2 { color: #d8f0e2; }
+
+.formulario, .historial {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background: #2c7a4b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover { background: #245f3c; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th { background: #f0f0f0; }
+
+.ingreso { color: #2c7a4b; font-weight: bold; }
+.egreso  { color: #c0392b; font-weight: bold; }
+.transferencia { color: #2980b9; font-weight: bold; }
+
+.btn-eliminar {
+  background: #c0392b;
+  padding: 4px 10px;
+  font-size: 12px;
+}
